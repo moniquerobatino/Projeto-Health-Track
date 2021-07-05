@@ -1,0 +1,9 @@
+*{font-family: Arial, Helvetica, sans-serif}
+h1
+{
+    text-align: center;
+    margin: 40px auto;
+    font-size: 25px
+}
+.form-check label{text-align: center}
+.button{margin-bottom: 40px}

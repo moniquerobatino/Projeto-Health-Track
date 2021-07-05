@@ -1,0 +1,29 @@
+*{font-family: Arial, Helvetica, sans-serif}
+h1
+{
+    max-width: 500px;
+    text-align: center;
+    margin: 100px auto
+}   
+h2
+{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto
+}
+.navbar{font-size: 15px}
+button{margin-inline: 30px}
+
+.offcanvas-body
+{
+    background-color: rgb(245, 245, 245);
+    font-size: 20px
+}
+.offcanvas-footer
+{
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 20px;
+    margin-left: 100px
+}

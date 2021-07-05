@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Required Meta Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Track</title>
+    <meta name="keywords" content="projeto fiap, health track">
+    <!--IE-->
+    <link rel="shortcut icon" type="image/x-icon" href="./Images/icon-heart.ico"/>
+    <!--Alternative Web Browsers-->
+    <link rel="icon" type="image/x-icon" href="./Images/icon-heart.ico"/>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style_cadastro.css">
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <h1>Criar Perfil de Usuário</h1>
+            </div>
+        </div>
+    </header>   
+<main class="container-fluid">
+    <form id="formulario" method="POST">
+        <div class="col-md-10 mx-auto">
+            <div class="form-group row">
+                <div class="col-md-6 mb-2">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" id="nome" value="Ada" disabled>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" value="Lovelace" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="genero" class="col-md-6">Gênero</label>
+                <div class="col-md-6 mb-1">
+                    <div class="row">
+                        <div class="col-md-6 mb-1">
+                            <input class="form-check-input" type="radio" name="genero_masculino" id="genero_masculino" value="Masculino" disabled>
+                            <label class="form-check-label" for="genero_masculino">Masculino</label>
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <input class="form-check-input" type="radio" name="genero_feminino" id="genero_feminino" value="Feminino" checked>
+                            <label class="form-check-label" for="genero_feminino">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6 mb-2">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <select class="form-select" id="dia_nascimento" name="dia_nascimento" disabled>
+                        <option selected="10">10</option>
+                        <option value="09">09</option> 
+                        <option value="08">08</option> 
+                        <option value="07">07</option> 
+                        <option value="06">06</option> 
+                    </select>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="data_nascimento">Mês</label>
+                    <select class="form-select" id="mes_nascimento" name="mes_nascimento" disabled>
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereiro">Fevereiro</option>
+                        <option value="março">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option selected="dezembro">Dezembro</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-2"> 
+                    <label for="data_nascimento">Ano</label>
+                    <select class="form-select" id="ano_nascimento" name="ano_nascimento" disabled>
+                        <option selected="1815">1815</option>
+                        <option value="1814">1814</option> 
+                        <option value="1813">1813</option> 
+                        <option value="1812">1812</option> 
+                        <option value="1811">1811</option> 
+                    </select>
+                </div>
+            </div> 
+            <div class="form-group row">
+                <div class="col-md-6 mb-2">
+                    <label for="Cidade">Cidade</label>
+                    <input type="text" class="form-control" id="Cidade" value="Londres" disabled>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label for="Estado">País</label>
+                    <input type="text" class="form-control" id="Estado" value="Inglaterra, Reino Unido" disabled>
+                </div> 
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6 mb-2"> 
+                    <label for="e-mail">E-mail</label>
+                    <input type="email" class="form-control" id="email" value="ada.lovelace@dominio.com" disabled>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <label for="pwd">Senha</label>
+                    <input type="password" class="form-control" id="pwd" value="12345678" disabled>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-6 mb-5">       
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="acordo" checked>
+                            <label class="form-check-label" for="gridCheck">Ao inscrever-se no Health Track, você concorda com os Termos de serviço.<br>
+                            Veja a nossa Política de privacidade.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-md-6 mb-2">
+                    <div class="button">
+                        <!--<button class="btn btn-primary" type="submit" disabled>Enviar</button>-->
+                        <a class="btn btn-primary" href="./login.html" role="button">Enviar</a>
+                    </div>
+                </div>
+            </div>   
+        </div>                    
+    </form>
+</main>    
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
